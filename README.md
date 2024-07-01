@@ -1,1 +1,1 @@
-# Landing-Page
+This is my landing page that was made through The Odin Project.
