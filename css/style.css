@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Hina Mincho", serif;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 30px;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .header1 {
+    font-size: 64px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(188, 0, 45);
+    box-shadow: 5px 5px 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 32px;
+    color: #484848;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* .header img {
+    max-width: 100%;
+} */
+
+/* fade into pink, color of blossom? */
