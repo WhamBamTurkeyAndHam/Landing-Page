@@ -7,11 +7,6 @@
 body {
     font-family: "Hina Mincho", serif;
     height: 100vh;
-    margin: 0 auto;
-}
-
-.container {
-    padding: 30px;
 }
 
 .navbar {
@@ -22,9 +17,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 2em 1em 1em;
 }
 
-.navbar .header1 {
+.navbar .logo {
     font-size: 64px;
     color: #000000;
     font-weight: bold;
@@ -36,11 +32,12 @@ body {
     border-radius: 50%;
     background-color: rgb(188, 0, 45);
     box-shadow: 5px 5px 10px;
+    flex-shrink: 0;
 }
 
 .navbar a {
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 15px;
     font-size: 32px;
     color: #484848;
 }
@@ -53,8 +50,56 @@ li {
     list-style-type: none;
 }
 
-/* .header img {
-    max-width: 100%;
-} */
+.navbar a:hover {
+    text-decoration: underline;
+}
 
-/* fade into pink, color of blossom? */
+.header .bigcontainer {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(255, 190, 241) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8em 12em;
+    gap: 15em;
+}
+
+/* Make discover button auto scroll down to boxed items */
+
+.rightcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftcontainer h1 {
+    font-size: 52px;
+}
+
+.leftcontainer p {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.rightcontainer img {
+    width: 1000px;
+    box-shadow: 5px 5px 10px;
+}
+
+.rightcontainer p {
+    align-self: flex-end;
+    padding-top: 10px;
+    font-size: 24px;
+    animation: fadeIn 5s;
+}
+
+.button1, .button2 {
+    background-color: rgb(188, 0, 45);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 32px;
+    border-radius: 5px;
+    padding: 5px 20px 10px 20px;
+}
+
+.cta .button2 {
+    border: solid #fff;
+}
