@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,10 +11,10 @@ body {
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
-.navbar .container {
+.navbar .bigcontainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -54,6 +55,10 @@ li {
     text-decoration: underline;
 }
 
+#logo:hover {
+    text-decoration: none;
+}
+
 .header .bigcontainer {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(255, 190, 241) 100%);
     display: flex;
@@ -70,7 +75,7 @@ li {
 
 .header .leftcontainer h1 {
     font-size: 52px;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .header .leftcontainer p {
@@ -78,26 +83,25 @@ li {
     margin-bottom: 1em;
 }
 
-.header .rightcontainer img {
-    width: 1000px;
-    box-shadow: 5px 5px 10px;
-    border: solid 5px rgb(188, 0, 45);
-}
-
-.header .rightcontainer p {
-    align-self: flex-end;
-    padding-top: 10px;
-    font-size: 24px;
-    animation: fadeIn 5s;
-}
-
-.button1, .button2 {
+.header .button1 {
     background-color: rgb(188, 0, 45);
     color: #ffffff;
     text-decoration: none;
     font-size: 32px;
     border-radius: 5px;
     padding: 5px 20px 10px 20px;
+}
+
+.button1:hover {
+    background-color: #fff;
+    color: rgb(188, 0, 45);
+    border: solid 2px rgb(188, 0, 45);
+}
+
+.header .rightcontainer img {
+    width: 1000px;
+    box-shadow: 5px 5px 10px;
+    border: solid 5px rgb(188, 0, 45);
 }
 
 .boxes {
@@ -107,6 +111,7 @@ li {
 .boxestitle {
     text-align: center;
     font-size: 52px;
+    padding-top: 2em;
 }
 
 .boxes .bigcontainer {
@@ -143,7 +148,7 @@ li {
     overflow: hidden;
 }
 
-.quote .container {
+.quote .bigcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,8 +204,19 @@ li {
 }
 
 .cta .button2 {
+    background-color: rgb(188, 0, 45);
     color: #dcdcdc;
-    border: solid 5px #dcdcdc;
+    border: solid 2px #dcdcdc;
+    text-decoration: none;
+    font-size: 32px;
+    border-radius: 5px;
+    padding: 5px 20px 10px 20px;
+}
+
+.button2:hover {
+    background-color: #dcdcdc;
+    color: rgb(188, 0, 45);
+    border: solid 2px rgb(168, 0, 45);
 }
 
 .footer {
@@ -211,4 +227,9 @@ li {
     padding: 2em;
     font-size: 24px;
     color: #898989;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #e0dcdc;
 }
