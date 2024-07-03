@@ -82,6 +82,7 @@ li {
 .rightcontainer img {
     width: 1000px;
     box-shadow: 5px 5px 10px;
+    border: solid 5px rgb(188, 0, 45);
 }
 
 .rightcontainer p {
@@ -98,6 +99,40 @@ li {
     font-size: 32px;
     border-radius: 5px;
     padding: 5px 20px 10px 20px;
+}
+
+.boxes {
+    background-color: rgb(255, 190, 241);
+}
+
+.boxestitle {
+    text-align: center;
+    font-size: 52px;
+}
+
+.boxes .bigcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    padding: 4em 16em 8em 16em;
+}
+
+.boxes .box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    flex: none;
+}
+
+.box p {
+    font-size: 26px;
+    text-align: center;
+}
+
+.imgbox {
+    border: solid 5px rgb(188, 0, 45);
+    width: 100%;
 }
 
 .cta .button2 {
