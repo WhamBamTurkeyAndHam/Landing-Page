@@ -99,7 +99,7 @@ li {
 }
 
 .header .rightcontainer img {
-    width: 100%;
+    max-width: 100%;
     box-shadow: 5px 5px 10px;
     border: solid 5px rgb(188, 0, 45);
 }
