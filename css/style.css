@@ -63,8 +63,6 @@ li {
     gap: 15em;
 }
 
-/* Make discover button auto scroll down to boxed items */
-
 .rightcontainer {
     display: flex;
     flex-direction: column;
@@ -133,6 +131,39 @@ li {
 .imgbox {
     border: solid 5px rgb(188, 0, 45);
     width: 100%;
+}
+
+.quote {
+    display: flex;
+    min-height: 75vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, .25);
+    color: #fff;
+    font-size: 52px;
+    padding: 0 8em;
+}
+
+.quote .quoteby {
+    align-self: flex-end;
+    margin-top: 2em;
+}
+
+.videobackground {
+    position: absolute;
+    filter: blur(5px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
 .cta .button2 {
